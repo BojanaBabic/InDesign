@@ -111,3 +111,29 @@ h2 {
 		margin-left: 1em;
 	}
 }
+.stories {
+	@include clearfix;
+	.user {
+		float: left;
+		width: 30%;
+		img {
+			float: left;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+		p {
+			float: right;
+		}
+		.italic{
+			clear: both;
+			font-style: italic;
+			text-align: left;
+		}
+	}
+}
+.user {
+	& + & {
+		margin-left: 1em;
+	}
+}
