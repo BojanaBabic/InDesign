@@ -4,7 +4,7 @@
 @include main;
 section {
 	width: 100%;
-	padding: 2em 10em;
+	padding: 3em 10em;
 }
 .logo {
 	font-size: normal;
@@ -68,4 +68,18 @@ section {
 }
 h2 {
 	text-align: center;
+}
+.create {
+	@include clearfix;
+	border-bottom: 1px solid $main_text_color;
+	p{
+		float: left;
+		width: 50%;
+		text-align: center;
+		margin-top: 6em;
+	}
+	img {
+		float: right;
+		width: 50%;
+	}
 }
