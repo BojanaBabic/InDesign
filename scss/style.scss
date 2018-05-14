@@ -28,6 +28,7 @@ section {
 		}
 		nav {
 			float: right;
+			margin-right: 1em;
 			ul {
 				list-style-type: none;
 				li{
@@ -155,8 +156,11 @@ footer {
 		margin-bottom: 1em;
 	}
 	address {
-		color: #fff;
 		float: left;
+		p {
+			color: #fff;
+			font-size: 1.5em;
+		}
 	}
 	.map {
 		float: right;
@@ -277,8 +281,9 @@ footer {
 		}
 		.map {
 			float: none;
-			width: 90%;
+			width: 80%;
 			margin: $centerMargin;
+			margin-bottom: 2em;
 		}
 		.second {
 			display: block;
