@@ -1,0 +1,71 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+section {
+	width: 100%;
+	padding: 2em 10em;
+}
+.logo {
+	font-size: normal;
+	span {
+		color: $blueColor;
+	}
+}
+.intro{
+	padding: 0;
+	background: url('../images/home.jpg');
+	@include backgroundSizePrefix(cover);
+	width: 100vw;
+	height: 100vh;
+	@include clearfix;
+	header{
+		background: rgba(255, 255, 255, 0.7);
+		padding: 1em;
+		@include clearfix;
+		.logo {
+			float: left;
+		}
+		nav {
+			float: right;
+			ul {
+				list-style-type: none;
+				li{
+					display: inline;
+					a {
+						text-decoration: none;
+						margin-left: 1em;
+						text-transform: uppercase;
+
+					}
+				}
+			}
+		}
+	}
+	.text {
+		background: rgba(0, 0, 0, 0.7);
+		width: 25%;
+		text-align: center;
+		margin-top: 25%;
+		margin-left: 5em;
+		padding: 1em;
+		h1,h3 {
+			color: white;
+		}
+	}
+	.buttons {
+		background: $blueColor;
+		float: right;
+		margin-right: 10em;
+		a {
+			display: block;
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 1em;
+		}
+	}
+}
+h2 {
+	text-align: center;
+}
