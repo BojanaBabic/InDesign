@@ -83,3 +83,31 @@ h2 {
 		width: 50%;
 	}
 }
+.option {
+	@include clearfix;
+	border-bottom: 1px solid $main_text_color;
+	.opt {
+		text-align: center;
+		float: left;
+		width: 49%;
+		border: 1px solid $blueColor;
+		padding: 3em 2em;
+		margin-top: 2em;
+		p {
+			margin-bottom: 2em;
+		}
+		a {
+			background: $blueColor;
+			text-decoration: none;
+			padding: 1em 2em;
+			text-transform: uppercase;
+			color: #fff;
+			margin-bottom: 2em;
+		}
+	}
+}
+.opt {
+	& + & {
+		margin-left: 1em;
+	}
+}
